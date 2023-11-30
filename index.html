@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
+    <!--     <header>
       <div class="nav">
         <div class="nav-left">
           <img src="./img/logo-small.png" alt="Logo Dropbox" />
@@ -63,10 +63,50 @@
           </div>
         </div>
       </div>
-    </header>
+    </header> -->
     <main>
-      <section class="fatturazione container-small"></section>
-      <section class="piani container-small"></section>
+      <section class="fatturazione">
+        <div class="container-small">
+          <h2>Trova il piano business che fa per te</h2>
+          <form>
+            <input type="radio" id="1" name="fattura" /><label for="1"
+              >Fatturazione mensile</label
+            >
+            <input type="radio" id="2" name="fattura" /><label for="2"
+              >Fatturazione annuale</label
+            >
+          </form>
+        </div>
+      </section>
+      <section class="piani">
+        <div class="container-small">
+          <div class="box-prezzo">
+            <div class="target"><i class="fa-solid fa-user"></i> Singolo</div>
+            <div class="box-prezzo-info">
+              <ul class="box-title">
+                <li><h3>Professional</h3></li>
+                <li>&euro; 12,00</li>
+                <li>/mese</li>
+              </ul>
+              <div class="description">
+                <div class="small-icon"><i class="fa-solid fa-user"></i></div>
+                <div class="text">1 utente</div>
+                <div class="small-icon"><i class="fa-solid fa-folder"></i></div>
+                <div class="text">5 TB di spazio di archiviazione sicuro</div>
+                <div class="small-icon">
+                  <i class="fa-solid fa-share-nodes"></i>
+                </div>
+                <div class="text">
+                  Funzioni di produttivit&agrave; premium e condivisione file
+                  semplice e sicura
+                </div>
+            </div>
+          </div>
+          <div class="box-prezzo"></div>
+          <div class="box-prezzo"></div>
+        </div>
+      </section>
+
       <section class="contattaci container-small"></section>
       <section class="partner container-small"></section>
       <section class="conta container-small"></section>

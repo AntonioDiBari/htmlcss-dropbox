@@ -25,7 +25,7 @@ body {
 
 .container-small {
   margin: 0 auto;
-  width: 50vw;
+  width: 52vw;
 }
 
 .button-blu {
@@ -34,7 +34,17 @@ body {
   padding: 5px 12px;
   border: 0;
 }
+ul {
+  list-style-type: none;
+}
 
+h2 {
+  font-size: 2rem;
+  margin-bottom: 35px;
+}
+h3 {
+  font-size: 1.3rem;
+}
 /* HEADER */
 
 .nav {
@@ -54,7 +64,6 @@ body {
 }
 
 .nav ul {
-  list-style-type: none;
   display: inline-block;
 }
 .nav li {
@@ -113,12 +122,64 @@ h1 {
 /* MAIN */
 
 .fatturazione {
-  background-color: yellowgreen;
-  height: 600px;
+  margin: 100px 0 30px 0;
+  height: 100%;
 }
 
+.fatturazione label {
+  margin: 0 20px 0 5px;
+}
+
+/* PIANI */
+
+.piani > .container-small {
+  display: flex;
+  gap: 40px;
+}
+
+.box-prezzo {
+  width: 33%;
+  height: 100%;
+  border: 1px solid #e5e5e6;
+}
+
+.target {
+  line-height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e6;
+}
+.box-prezzo-info {
+  padding: 20px 20px 0 20px;
+}
+.box-prezzo-info li {
+  padding: 10px 0;
+}
+.box-prezzo-info .box-title li:last-child {
+  color: grey;
+}
+.box-prezzo-info .box-title li:nth-child(2) {
+  font-weight: bold;
+}
+
+.text {
+  width: 90%;
+}
+.small-icon {
+  width: 10%;
+}
+.text,
+.small-icon {
+  margin-bottom: 20px;
+}
+
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
 /* SEZIONE QUADRATI */
-.client-logo {
+/* .client-logo {
   display: flex;
 }
 
@@ -130,10 +191,11 @@ h1 {
   width: calc(100% / 3);
   height: calc(100vw / 3);
 }
-
+ */
 /* FOOTER */
 
-.footer {
+/* .footer {
   background-color: black;
   height: 250px;
 }
+ */

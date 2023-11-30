@@ -178,6 +178,16 @@ h1 {
   flex-wrap: wrap;
   margin: 40px 0;
 }
+
+.box-prezzo-info > .button-blu {
+  width: 100%;
+  padding: 10px 0px;
+  margin-bottom: 30px;
+}
+
+hr {
+  margin: 30px 160px 40px 0;
+}
 /* SEZIONE QUADRATI */
 /* .client-logo {
   display: flex;

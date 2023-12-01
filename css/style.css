@@ -266,7 +266,10 @@ h1 {
 
 .col-50 {
   width: 50%;
-  height: 50%;
+  height: calc(100vw / 6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .client-logo {
@@ -282,17 +285,51 @@ h1 {
 
 .client-logo-middle {
   background-color: whitesmoke;
+  padding: 40px 40px 0 40px;
+}
+.quotes {
+  quotes: "'";
+  margin-bottom: 40px;
 }
 .client-logo-left,
 .client-logo-right {
   background-color: #393939;
+  display: flex;
+  flex-wrap: wrap;
 }
 .client-logo-left > .col-50 > img,
 .client-logo-right > .col-50 > img {
   filter: invert(1);
   width: 130px;
 }
-
+.client-logo-middle img {
+  width: 170px;
+}
+.client-logo-left div:first-child {
+  background-color: #a2d39b;
+  border: 10px solid #d1e9cd;
+}
+.client-logo-left div:nth-child(2) {
+  background-color: #61082b;
+}
+.client-logo-left div:nth-child(3) {
+  background-color: #0093ce;
+}
+.client-logo-left div:last-child {
+  background-color: #ff1c1c;
+}
+.client-logo-right div:first-child {
+  background-color: #d5001f;
+}
+.client-logo-right div:nth-child(2) {
+  background-color: #b4d0e7;
+}
+.client-logo-right div:nth-child(3) {
+  background-color: #0d2481;
+}
+.client-logo-right div:last-child {
+  background-color: #ffd830;
+}
 /* FREE TRIAL */
 .free-trial {
   background-color: #b4d0e7;

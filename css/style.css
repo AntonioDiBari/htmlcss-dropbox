@@ -199,8 +199,10 @@ h1 {
   margin-bottom: 30px;
 }
 
-hr {
-  margin: 30px 160px 40px 0;
+.hr-main {
+  margin: 30px 0px 40px 0;
+  width: 40px;
+  color: #e5e5e6;
 }
 
 .box-flex {
@@ -222,6 +224,7 @@ hr {
 
 .col-70 {
   width: 70%;
+  margin-bottom: 15px;
 }
 .col-30 {
   width: 30%;
@@ -347,8 +350,31 @@ hr {
 }
 /* FOOTER */
 
-/* .footer {
+.footer {
+  padding: 70px 0 40px 0;
   background-color: black;
-  height: 250px;
+  min-height: 350px;
+  color: rgb(177, 177, 177);
 }
- */
+.footer-wrapper {
+  display: flex;
+}
+
+.col-20 {
+  width: 20%;
+}
+
+.footer li {
+  padding-bottom: 15px;
+}
+.footer .mid-title {
+  color: white;
+}
+
+.footer ul {
+  margin-top: 25px;
+}
+
+.footer .hr-main {
+  width: 70px;
+}

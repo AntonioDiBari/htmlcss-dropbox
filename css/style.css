@@ -317,7 +317,34 @@ hr {
 .faq {
   margin: 100px auto;
 }
+.box-domande {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  border-top: 2px solid #e5e5e6;
+  padding-top: 5px;
+}
+.faq .box-domande:last-child {
+  border-bottom: 2px solid #e5e5e6;
+}
+.arrow {
+  flex-basis: 40px;
+  text-align: center;
+}
 
+.domanda {
+  font-weight: bold;
+}
+
+.tendina {
+  display: none;
+  font-weight: normal;
+  margin: 25px 0;
+}
+.domanda:hover .tendina {
+  display: inline-block;
+}
 /* FOOTER */
 
 /* .footer {

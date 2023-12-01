@@ -51,7 +51,7 @@ h4 {
 }
 
 .mid-title {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .mid-text {
   margin-bottom: 20px;
@@ -232,7 +232,6 @@ hr {
 .col-40 {
   width: 40%;
 }
-
 .partner .col-40 {
   padding: 50px 15px 0 30px;
 }
@@ -244,23 +243,85 @@ hr {
   box-shadow: 0px 0px 4px 0px;
 }
 
-/* SEZIONE QUADRATI */
-/* .client-logo {
+/* FEATURES */
+
+.feature,
+.business {
+  margin: 80px auto 100px auto;
+}
+.feature .box-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.business {
+  padding-right: 12rem;
+}
+
+/* todoSEZIONE QUADRATI */
+
+.col-50 {
+  width: 50%;
+  height: 50%;
+}
+
+.client-logo {
   display: flex;
 }
 
 .client-logo-left,
 .client-logo-middle,
 .client-logo-right {
-  background-color: aqua;
-  border: 2px solid black;
   width: calc(100% / 3);
   height: calc(100vw / 3);
 }
- */
+
+.client-logo-middle {
+  background-color: whitesmoke;
+}
+.client-logo-left,
+.client-logo-right {
+  background-color: #393939;
+}
+.client-logo-left > .col-50 > img,
+.client-logo-right > .col-50 > img {
+  filter: invert(1);
+  width: 130px;
+}
+
+/* FREE TRIAL */
+.free-trial {
+  background-color: #b4d0e7;
+}
+
+.free-trial .container-small {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 80px 0;
+}
+
+.free-trial h2 {
+  color: #610629;
+}
+
+.free-trial .col-40 button {
+  width: 80%;
+  border: 0;
+  background-color: white;
+  padding: 10px 0;
+}
+
+/* FAQ */
+.faq {
+  margin: 100px auto;
+}
+
 /* FOOTER */
 
-.footer {
+/* .footer {
   background-color: black;
   height: 250px;
 }
+ */

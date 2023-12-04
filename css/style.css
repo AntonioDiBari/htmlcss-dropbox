@@ -63,12 +63,11 @@ button:hover {
 /* HEADER */
 
 .nav {
-  width: 100%;
-  height: 50px;
-  padding: 15px 15px;
+  padding: 0 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .nav-left {
   display: flex;
@@ -76,7 +75,6 @@ button:hover {
 }
 .nav-left > img {
   height: 20px;
-  display: inline-block;
 }
 
 .nav ul {
@@ -85,7 +83,6 @@ button:hover {
 .nav li {
   display: inline-block;
   margin: 0 15px;
-  height: 50px;
   line-height: 50px;
 }
 
@@ -104,7 +101,6 @@ button:hover {
 .jumbo {
   padding-top: 70px;
   background-color: #b4d0e7;
-  height: 100%;
 }
 h1 {
   font-size: 4rem;
@@ -113,6 +109,7 @@ h1 {
 
 .jumbo-section {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .jumbo-left {
@@ -120,6 +117,8 @@ h1 {
   line-height: 17px;
   margin-top: 55px;
   position: relative;
+  min-width: 200px;
+  min-height: 350px;
 }
 
 .jumbo-left > .button-blu {
@@ -135,15 +134,19 @@ h1 {
 
 .jumbo-right {
   width: 70%;
+  min-height: 250px;
+  min-width: 250px;
   position: relative;
-  top: 55px;
+}
+.jumbo-right img {
+  bottom: -55px;
+  position: absolute;
 }
 
-/* MAIN */
+/* FORM */
 
 .fatturazione {
   margin-top: 100px;
-  height: 100%;
 }
 
 .fatturazione label {
@@ -155,18 +158,18 @@ h1 {
 .piani > .container-small {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .box-prezzo {
-  width: 33%;
+  width: 30%;
+  min-width: 190px;
   border: 1px solid #e5e5e6;
   margin: 30px 0;
 }
 
 .target {
   line-height: 30px;
-  vertical-align: middle;
   text-align: center;
   border: 1px solid #e5e5e6;
 }
@@ -188,6 +191,7 @@ h1 {
   flex-wrap: wrap;
   align-content: flex-start;
   min-height: 250px;
+  margin-top: 25px;
 }
 
 .text {
@@ -213,21 +217,21 @@ h1 {
   color: #e5e5e6;
 }
 
-.box-flex {
-  width: 100%;
+.contattaci .container-small {
   min-height: 200px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
-.box-flex .box-prezzo-info {
+.contattaci .box-prezzo-info {
   border-left: 1px solid #e5e5e6;
   border-right: 1px solid #e5e5e6;
   border-bottom: 1px solid #e5e5e6;
   display: flex;
 }
 
-.partner .box-flex {
+.box-flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .col-70 {
@@ -236,12 +240,15 @@ h1 {
 }
 .col-30 {
   width: 30%;
+  min-width: 200px;
 }
 .col-60 {
   width: 60%;
+  min-width: 300px;
 }
 .col-40 {
   width: 40%;
+  min-width: 200px;
 }
 .partner .col-40 {
   padding: 50px 15px 0 30px;
@@ -278,6 +285,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 100px;
 }
 
 .client-logo {
@@ -290,14 +298,15 @@ h1 {
 .client-logo-right {
   width: calc(100% / 3);
   height: calc(100vw / 3);
+  min-width: 200px;
 }
 
 .client-logo-middle {
   background-color: whitesmoke;
   padding: 40px 40px 0 40px;
+  overflow: auto;
 }
 .quotes {
-  quotes: "'";
   margin-bottom: 40px;
 }
 .client-logo-left,
@@ -389,7 +398,7 @@ h1 {
 .tendina {
   display: none;
   font-weight: normal;
-  margin: 25px 0;
+  margin: 25px 30px;
 }
 .domanda:hover .tendina {
   display: inline-block;

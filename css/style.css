@@ -68,6 +68,10 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+  width: 100%;
 }
 .nav-left {
   display: flex;
@@ -281,7 +285,7 @@ h1 {
 
 .col-50 {
   width: 50%;
-  height: calc(100vw / 6);
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
